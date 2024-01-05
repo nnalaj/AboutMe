@@ -1,8 +1,8 @@
 import React from 'react'
-import Resume from "./imports/ui/Resume";
-import Installs from "./imports/ui/Installs";
-import Home from "./imports/ui/Home";
-import ErrorPage from "./imports/ui/ErrorPage"
+import Resume from "../ui/Resume";
+import Installs from "../ui/Installs";
+import Home from "../ui/Home";
+import ErrorPage from "../ui/ErrorPage"
 import { createBrowserRouter } from "react-router-dom";
 
 

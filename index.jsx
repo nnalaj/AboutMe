@@ -3,7 +3,19 @@ import './main.scss'
 import {Meteor} from "meteor-node-stubs"
 import {RouterProvider} from 'react-router-dom';
 import reactDom from 'react-dom/client';
+<<<<<<< HEAD:build/index.jsx
 import {Router} from './Router.jsx'; // 
+=======
+<<<<<<<< HEAD:src/index.jsx
+import {Router} from './imports/api/Router.jsx'; // 
+========
+<<<<<<< HEAD:index.jsx
+import {Router} from './imports/api/Router.jsx'; // 
+=======
+import {Router} from './Router.jsx'; // 
+>>>>>>> 5ad1295 (index fix?):build/index.jsx
+>>>>>>>> 2c252357db6de218ae3b12a4fe047933fbb1b686:index.jsx
+>>>>>>> 2c252357db6de218ae3b12a4fe047933fbb1b686:index.jsx
 
 //TODO: implement error landing page (done)
 //TODO: impoment router ( finally done)
