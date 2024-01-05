@@ -3,7 +3,7 @@ import './main.scss'
 import {Meteor} from "meteor-node-stubs"
 import {RouterProvider} from 'react-router-dom';
 import reactDom from 'react-dom/client';
-import {Router} from './imports/api/Router.jsx';
+import {HashRouter as Router} from './imports/api/Router.jsx';
 
 
 //TODO: implement error landing page (done)
