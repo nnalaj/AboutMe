@@ -1,5 +1,5 @@
 import React from "react";
-import NNALAJ from "./NNALAJ";
+import NNALAJ from "./NNALAJ.jsx";
 import {Outlet , Link} from "react-router-dom";
 import Installs from "./Installs.jsx"
 

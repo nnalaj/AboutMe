@@ -3,7 +3,8 @@ import './main.scss'
 import {Meteor} from "meteor-node-stubs"
 import {RouterProvider} from 'react-router-dom';
 import reactDom from 'react-dom/client';
-import {HashRouter as Router} from './imports/api/Router.jsx';
+//import {HashRouter as Router} from './imports/api/Router.jsx';
+import {HashRouter as Router} from 'react-router-dom';
 
 
 //TODO: implement error landing page (done)
@@ -16,10 +17,10 @@ Meteor.startup(() => {
    )
   
   
-   // const container = document.getElementById('react-target');
-  // const root = createRoot(container);
-  // <BrowserRouter>      
-  //   <App />        no longer needed but good to have just in case router falls through
-  // </BrowserRouter>
-
+   const container = document.getElementById('react-target');
+  const root = createRoot(container);
+  <BrowserRouter>      
+    <App />        
+  </BrowserRouter>
+//no longer needed but good to have just in case router falls through (try this when you wake up)
 });
