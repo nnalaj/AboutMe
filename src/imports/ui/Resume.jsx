@@ -6,7 +6,7 @@ import React from "react";
 //maybe add icons to social links
 //style the thing (working on)
 
-export default Resume =() =>{
+const Resume =() => {
         
 const resumeData = {
         summary:"Current Winthrop student studying Digital Information and Web Application Design looking to start a career in web application development.",
@@ -17,8 +17,7 @@ const resumeData = {
         github: "https://github.com/nnalaj",
         ig: "https://instagram.com/nnnalaj", 
         email: "jalannlittle923@gmail.com ", 
-
-    }
+     }
 
     return(
         <div className='ResumeBlock'>
@@ -47,3 +46,5 @@ const resumeData = {
         </div>
     )
 }
+
+export default Resume;

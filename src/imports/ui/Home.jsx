@@ -2,7 +2,7 @@ import React from "react";
 import Video from "./Video";
 import Nav from "./Nav";
 
-export default Home = () => {
+const Home = () => {
 
     return(
        <div>
@@ -10,4 +10,6 @@ export default Home = () => {
             <Video /> {/* video background component render last for speed */}
         </div> 
     );
-};
+}
+
+export default Home

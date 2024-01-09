@@ -1,5 +1,4 @@
 import React from "react";
-import Heading from "./NNALAJ";
 
 // setup a way to make videos suffle in the background
 // TODO: locate that video you made for video 2 and put it in the background (it was cool)
@@ -7,7 +6,7 @@ import Heading from "./NNALAJ";
 // TODO: add the video installations from video 2 (those were cool)
 
 
-export default Video = () =>{
+const Video = () =>{
 
     const playlist = []
    
@@ -35,4 +34,5 @@ export default Video = () =>{
                 <video src= {playlist[randomInt()]} type='video/mp4' autoPlay loop muted/> {/*need to find a way to loop on video end */}
             </div>
     );
-};
+}
+export default Video

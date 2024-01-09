@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default Merch = () => {
+const Merch = () => {
 
 //i have things for sale. this will come next but will need a way for the html to be generated when i need to add items
 //will also want to use a database instead of hardcoding entries
@@ -25,3 +25,4 @@ export default Merch = () => {
         </div>
     );
 }
+export default Merch

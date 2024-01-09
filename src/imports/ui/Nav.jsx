@@ -3,7 +3,7 @@ import NNALAJ from "./NNALAJ.jsx";
 import {Outlet , Link} from "react-router-dom";
 import Installs from "./Installs.jsx"
 
-export default Nav = () => {
+const Nav = () => {
 
    //simple grid for now need to find a way to animate the secontions or something(Done, could use more work)
    //TODO: link resume or add resume component somehow (working on)
@@ -48,4 +48,5 @@ export default Nav = () => {
 
        
     );
-};
+}
+export default Nav

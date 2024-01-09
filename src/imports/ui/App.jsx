@@ -9,13 +9,13 @@ const App = () => {
   
   return (
 
-    <Routes>
-      <Route path='/home' element={<Home />} />
-    </Routes>
+    // <Routes>
+    //   <Route path='/home' element={<Home />} />
+    // </Routes>
 
-  // <div className="content">
-  //     <Home />
-  //   </div>
+  <div className="content">
+      <Home />
+    </div>
   );
 };
 

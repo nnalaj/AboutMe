@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default Installs = () => {
+
+const Installs = () => {
 
     //information about my video installations will go here
     //so far: miata room, secret cave room, and whatever i can put together in my apartment before i have to move
@@ -13,3 +14,5 @@ export default Installs = () => {
         </div>
     )
 }
+
+export default Installs

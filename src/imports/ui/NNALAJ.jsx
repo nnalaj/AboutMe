@@ -1,6 +1,7 @@
 import React from "react";
 
-export default Heading = () => {
+
+const Heading = () => {
 
 return (
     <div>
@@ -9,3 +10,5 @@ return (
 );
 
 };
+
+export default Heading

@@ -12,17 +12,17 @@ import {Router} from './imports/api/Router.jsx';
 
 //Meteor.startup(() => {
 
-  // reactDom.createRoot(document.getElementById('react-target')).render(   //have react-dom connect to react-target
-  // <RouterProvider router = {Router} />  //render the app by taking the router to the app route
-  //  )
+  reactDom.createRoot(document.getElementById('react-target')).render(   //have react-dom connect to react-target
+  <RouterProvider router = {Router} />  //render the app by taking the router to the app route
+   )
   
   
-   const container = document.getElementById('react-target');
-  const root = createRoot(container);
-  // <BrowserRouter>      
-  reactDom.createRoot(container).render(
-    <App />      
-  )  
+  //  const container = document.getElementById('react-target');
+  // const root = createRoot(container);
+  // // <BrowserRouter>      
+  // reactDom.createRoot(container).render(
+  //   <App />      
+  // )  
   // </BrowserRouter>
 //no longer needed but good to have just in case router falls through (try this when you wake up)
 //});

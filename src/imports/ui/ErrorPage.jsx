@@ -1,8 +1,7 @@
 import react from "react";
 
 //TODO: center and style the text
-
-export default ErrorPage = () => {
+const ErrorPage = () => {
 
     return(
         <div>
@@ -12,3 +11,4 @@ export default ErrorPage = () => {
         </div>
     )
 }
+export default ErrorPage
