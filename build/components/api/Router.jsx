@@ -25,12 +25,7 @@ export const Router = createBrowserRouter([
                 path: "/resume",
                 element: <Resume />,
                 errorElement: <ErrorPage />
-              },
-              {
-                path: "/AboutMe",
-                element: <Home />,
-                errorElement: <ErrorPage />
-              }
+              }, 
         ],
       errorElement: <ErrorPage />    
     }
