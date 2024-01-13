@@ -9,16 +9,16 @@ import { createHashRouter } from "react-router-dom";
 
 export const Router = createHashRouter([
     {
-      path: "./",
+      path: "./#",
       element: <Home />,
         children: [
             {
-                path: "./home",
+                path: "./#/home",
                 element: <Home />,
                 //errorElement: <ErrorPage />
               },
               {
-                path: "./installs",
+                path: "./#/installs",
                 element: <Installs />,
                 //errorElement: <ErrorPage />
               }, 
