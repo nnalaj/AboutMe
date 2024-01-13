@@ -4,6 +4,7 @@ import Nav from "./Nav";
 
 const Home = () => {
 
+    console.log('on home page');
     return(
        <div>
              <Nav />   {/*rendered grid in seperate component to save space */}

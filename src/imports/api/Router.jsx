@@ -2,31 +2,32 @@ import React from 'react'
 import Resume from "../ui/Resume";
 import Installs from "../ui/Installs";
 import Home from "../ui/Home";
+import App from '../ui/App'
 import ErrorPage from "../ui/ErrorPage"
 import { createBrowserRouter } from "react-router-dom";
 
 
 export const Router = createBrowserRouter([
     {
-      path: "/",
-      element: <Home />,
+      path: "./",
+      element: <App />,
         children: [
             {
-                path: "/home",
+                path: "./home",
                 element: <Home />,
-                errorElement: <ErrorPage />
+                //errorElement: <ErrorPage />
               },
               {
-                path: "/installs",
+                path: "./installs",
                 element: <Installs />,
-                errorElement: <ErrorPage />
+                //errorElement: <ErrorPage />
               }, 
               {
-                path: "/resume",
+                path: "./resume",
                 element: <Resume />,
-                errorElement: <ErrorPage />
+                //errorElement: <ErrorPage />
               }, 
         ],
-      errorElement: <ErrorPage />    
+      //errorElement: <ErrorPage />    
     }
   ]);
