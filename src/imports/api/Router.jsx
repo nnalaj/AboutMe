@@ -10,7 +10,7 @@ import { createHashRouter } from "react-router-dom";
 export const Router = createHashRouter([
     {
       path: "./",
-      element: <App />,
+      element: <Home />,
         children: [
             {
                 path: "./home",
