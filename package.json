@@ -1,7 +1,7 @@
 {
   "name": "AboutMeSite",
   "private": true,
-  "homepage": "https://github.com/nnalaj/AboutMe/#",
+  "homepage": "./#",
   "scripts": {
     "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
