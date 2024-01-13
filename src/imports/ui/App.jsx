@@ -9,9 +9,9 @@ const App = () => {
   return (
 <>
     
-    // <Routes>
+    {/* // <Routes>
     //   <Route path='/home' element={<Home />} />
-    // </Routes>
+    // </Routes> */}
 
   <div className="content">
       <Home />

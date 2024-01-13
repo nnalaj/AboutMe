@@ -4,10 +4,10 @@ import Installs from "../ui/Installs";
 import Home from "../ui/Home";
 import App from '../ui/App'
 import ErrorPage from "../ui/ErrorPage"
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 
 
-export const Router = createBrowserRouter([
+export const Router = createHashRouter([
     {
       path: "./",
       element: <App />,
