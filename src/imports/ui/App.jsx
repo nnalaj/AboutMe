@@ -7,16 +7,16 @@ import { Route, Routes } from 'react-router-dom';
 const App = () => {
   
   return (
-<>
-    <div> app being renderd</div>
-    {/* // <Routes>
-    //   <Route path='/home' element={<Home />} />
-    // </Routes> */}
 
-  {/* <div className="content">
+    // <div> app being renderd</div>
+    // <Routes>
+    //   <Route path='/home' element={<Home />} />
+    // </Routes>
+
+   <div className="content">
       <Home />
-    </div> */}
-    </>
+    </div>
+    
   );
 };
 
