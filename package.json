@@ -1,7 +1,7 @@
 {
   "name": "bruh",
   "private": true,
-  "homepage": "https://nnalaj.github.io/bruh",
+  "homepage": "https://nnalaj.github.io/bruh/#",
   "scripts": {
     "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
