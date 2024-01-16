@@ -2,6 +2,7 @@
   "name": "bruh",
   "private": true,
   "homepage": "https://nnalaj.github.io/bruh/#",
+  "nojekyll": true,
   "scripts": {
     "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
@@ -9,7 +10,8 @@
     "visualize": "meteor --production --extra-packages bundle-visualizer",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    
   },
   "dependencies": {
     "@babel/runtime": "^7.23.5",
