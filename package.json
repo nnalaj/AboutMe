@@ -1,7 +1,7 @@
 {
   "name": "AboutMeSite",
   "private": true,
-  "homepage": "http://nnalaj.github.io/AboutMe",
+  "homepage": "https://nnalaj/nnalaj.github.io/#",
   "scripts": {
     "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
@@ -26,11 +26,10 @@
   },
   "meteor": {
     "mainModule": {
-      "client": "src/index.jsx",
+      "client": "src/main.jsx",
       "server": "server/main.js"
     },
     "testModule": "tests/main.js"
-    
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"

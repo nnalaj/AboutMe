@@ -15,7 +15,7 @@ import { Home } from './imports/ui/Home.jsx';
 
 //Meteor.startup(() => {
 
-  reactDom.createRoot(document.getElementById('react-target')).render(   //have react-dom connect to react-target
+  reactDom.createRoot(document.getElementById('root')).render(   //have react-dom connect to react-target
   <>
   <RouterProvider router = {Router} fallbackelement={<App />} />
   </>  //render the app by taking the router to the app route

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "./#/static/css/main.41827d4e.css",
-    "main.js": "./#/static/js/main.d54f5e39.js",
-    "index.html": "./#/index.html",
-    "main.41827d4e.css.map": "./#/static/css/main.41827d4e.css.map",
-    "main.d54f5e39.js.map": "./#/static/js/main.d54f5e39.js.map"
+    "main.css": "/nnalaj.github.io/static/css/main.41827d4e.css",
+    "main.js": "/nnalaj.github.io/static/js/main.5da297ce.js",
+    "index.html": "/nnalaj.github.io/index.html",
+    "main.41827d4e.css.map": "/nnalaj.github.io/static/css/main.41827d4e.css.map",
+    "main.5da297ce.js.map": "/nnalaj.github.io/static/js/main.5da297ce.js.map"
   },
   "entrypoints": [
     "static/css/main.41827d4e.css",
-    "static/js/main.d54f5e39.js"
+    "static/js/main.5da297ce.js"
   ]
 }
