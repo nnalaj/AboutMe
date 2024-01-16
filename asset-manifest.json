@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nnalaj.github.io/static/css/main.41827d4e.css",
+    "main.js": "/nnalaj.github.io/static/js/main.5da297ce.js",
+    "index.html": "/nnalaj.github.io/index.html",
+    "main.41827d4e.css.map": "/nnalaj.github.io/static/css/main.41827d4e.css.map",
+    "main.5da297ce.js.map": "/nnalaj.github.io/static/js/main.5da297ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41827d4e.css",
+    "static/js/main.5da297ce.js"
+  ]
+}
