@@ -10,7 +10,7 @@
     "visualize": "meteor --production --extra-packages bundle-visualizer",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build"
     
   },
   "dependencies": {
