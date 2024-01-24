@@ -1,7 +1,7 @@
 {
   "name": "AboutMe",
   "private": true,
-  "homepage": "https://nnalaj.github.io/AboutMe/",
+  "homepage": "https://nnalaj.github.io/AboutMe/#",
   "nojekyll": true,
   "scripts": {
     "start": "meteor run",

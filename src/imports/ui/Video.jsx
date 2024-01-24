@@ -28,10 +28,13 @@ const Video = () =>{
         return i;
     }
     
+    function shuffle () {
+        //window.location.reload(true); //when set to false endlessly refreshes page
+    }
     
     return(
             <div className="video-background">
-                <video src= {playlist[randomInt()]} type='video/mp4' autoPlay loop muted/> {/*need to find a way to loop on video end */}
+                <video src= {playlist[randomInt()]} type='video/mp4' autoPlay loop muted onEnded={shuffle()}/> {/*need to find a way to shuffle on video end */}
             </div>
     );
 }
