@@ -1,6 +1,6 @@
 import React from "react";
 import NNALAJ from "./NNALAJ.jsx";
-import {Link} from "react-router-dom";
+import {Link, Outlet} from "react-router-dom";
 import Installs from "./Installs.jsx"
 
 const Nav = () => {
@@ -13,13 +13,14 @@ const Nav = () => {
    //TODO: implement router OR use useState to render components on button/link click (working on)
    
     return (
+        <>
         <div className = "homeGrid">
             <section >
                 <div className = "cell" ></div>
             </section>
             <section>
                 <div className = "cell">
-                    <Link reloadDocument>new video</Link> {/* reolad for new video */}
+                    <Link reloadDocument></Link> {/* reolad for new video */}
                 </div>
             </section>
             <section>
@@ -29,7 +30,7 @@ const Nav = () => {
             </section>
             <section>
                 <div className = "cell">
-                    <Link to="/installs">Installs</Link>    
+                    <Link to="/installs.jsx">installs</Link>    
                 </div>
             </section>
             <section>
@@ -44,7 +45,8 @@ const Nav = () => {
         
         </div>
 
-       
+        <Outlet />
+       </>
     );
 }
 export default Nav
