@@ -1,5 +1,6 @@
 import React from "react";
 import NNALAJ from "./NNALAJ.jsx";
+import Resume from "./Resume.jsx";
 import {Link, Outlet} from "react-router-dom";
 import Installs from "./Installs.jsx"
 
