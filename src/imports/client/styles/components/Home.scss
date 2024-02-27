@@ -24,3 +24,17 @@
     background-color: black;
     justify-content: center;
 }
+
+.cell-invisible{
+    display: flex;
+    color: aquamarine;
+    font-size: 40px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.react-target{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
