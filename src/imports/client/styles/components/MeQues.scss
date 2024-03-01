@@ -1,0 +1,42 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 600px) {
+    .homeGrid {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+      }
+    
+      .cell, section {
+        padding: 10px; /* Adjust padding for smaller screens */
+      }
+    
+      /* Adjust font size for smaller devices if necessary */
+      .cell a, .cell Link {
+        font-size: 14px; /* Adjust font size for smaller screens */
+      }
+  }
+  
+  /* Tablets, iPads (portrait and landscape) ----------- */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+    .homeGrid {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+      }
+    
+      .cell, section {
+        padding: 10px; /* Adjust padding for smaller screens */
+      }
+    
+      /* Adjust font size for smaller devices if necessary */
+      .cell a, .cell Link {
+        font-size: 14px; /* Adjust font size for smaller screens */
+      }
+  }
+  
+  /* Small screens, laptops ----------- */
+  @media only screen and (min-width: 901px) and (max-width: 1200px) {
+    
+  }
+  
+  /* Large screens, desktops ----------- */
+  @media only screen and (min-width: 1201px) {
+    
+  }
+  
