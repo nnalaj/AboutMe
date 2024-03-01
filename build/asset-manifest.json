@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/bruh/static/js/main.bcc18a47.js",
+    "index.html": "/bruh/index.html",
+    "main.bcc18a47.js.map": "/bruh/static/js/main.bcc18a47.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.bcc18a47.js"
+  ]
+}

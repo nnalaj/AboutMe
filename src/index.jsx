@@ -1,9 +1,7 @@
 import React from 'react';
-import "./main.scss";
 import { createRoot } from 'react-dom/client';
-import  App  from './imports/ui/App.jsx';
-import { HashRouter, RouterProvider } from 'react-router-dom';
-import { Router } from './imports/api/Router.jsx';
+import  {App}  from './/imports/ui/App';
+import "./main.scss";
 
   const container = document.getElementById('react-target');
   const root = createRoot(container);

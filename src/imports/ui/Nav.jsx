@@ -17,35 +17,44 @@ const Nav = () => {
         <>
             <div className = "homeGrid">
                 <section >
-                    <div className = "cell" ></div>
-                </section>
-                <section>
-                    <div className = "cell">
-                        <Link reloadDocument></Link> {/* reolad for new video */}
+                    <div className = "cell" >
+
                     </div>
                 </section>
                 <section>
                     <div className = "cell">
-                        <a href ="https://github.com/nnalaj">GitHub</a>
+                        
                     </div>
                 </section>
                 <section>
                     <div className = "cell">
-                        <Link to= {<Installs/>} >installs</Link>    
+                       
+                    </div>
+                </section>
+                <section>
+                    <div className = "cell">
+ 
                     </div>
                 </section>
                 <section>
                     <Resume />
                 </section>
                 <section>
-                    <div className = "cell"></div>
+                    <div className = "cell">
+
+                    </div>
                 </section>
                 <section>
-                    <div className = "cell"></div>
+                    <div className = "cell">
+
+                    </div>
+                </section> <section>
+                    <div className = "cell">
+                        
+                    </div>
                 </section> 
             </div>
 
-        <Outlet />
        </>
     );
 }
