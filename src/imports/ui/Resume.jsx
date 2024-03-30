@@ -22,26 +22,22 @@ const resumeData = {
     return(
         <div className='ResumeBlock'>
             <div className='ResumeContent'>
-                <img className="ResumeImage" />
                 <h2 className="ResumeHeader">Jalann Little</h2>
                 <a href = "mailto:jalannlittle923@gmail.com" className="ResumeHeaderEmail">{resumeData.email}</a>
-                <p className="ResumeSummary"> {resumeData.summary} {resumeData.summary2}  </p>
+                <p className="ResumeSummary"> I NEED A JOB </p>
                     <div>
                         <h2>Skills:</h2>
                         <table className = "skillsTable">
                             <tr>
-                                <th>Web Development:</th>
+                                <th>Web Developer</th>
                                 <th>Database</th>
                                 <th>Object Oriented</th>
                             </tr>
-                            <tr>
-                                <td>{resumeData.skills[1]}, {resumeData.skills[2]}, {resumeData.skills[4]} </td>    {/*vertical layout with pngs underneath  */}
-                                <td>{resumeData.skills[0]}, {resumeData.skills[3]} </td>
-                                <td>{resumeData.skills[5]}, {resumeData.skills[6]} </td>
-                            </tr>
                         </table>
                     </div>
-                <a href = {resumeData.ig}>Insta</a>|<a href = {resumeData.github}>github </a>|<a href = {resumeData.email}>email me</a>
+                    <div className="ResumeFooter">
+                        <a href = {resumeData.github}>github </a>|<a href = {resumeData.email}>email me</a>
+                    </div>
             </div>
         </div>
     )

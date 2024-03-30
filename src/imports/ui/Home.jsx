@@ -1,10 +1,8 @@
-import React from "react";
-import Video from "./Video";
-import Nav from "./Nav";
+import React from 'react';
+import Video from './Video';
+import Nav from './Nav';
 
 const Home = () => {
-
-    console.log('on home page');
     
     return(
        <div>
@@ -14,4 +12,4 @@ const Home = () => {
     );
 }
 
-export default Home
+export default Home;
