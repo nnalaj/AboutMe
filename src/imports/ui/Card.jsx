@@ -69,7 +69,7 @@ const BusinessCard = () => {
   return (
     <div ref={mountRef} style={{ position: 'relative', width: '100%', height: '100vh' }}>
       <div style={{ position: 'fixed', top: '10%', left: '50%', color: 'black', zIndex: 1 }}>
-        <h3>Your Content Here</h3>
+        
       </div>
     </div>
   );
