@@ -44,7 +44,6 @@ const Video = () => {
         src={playlist[currentVideoIndex]}
         type='video/mp4'
         autoPlay
-        loop
         muted
       />
     </div>

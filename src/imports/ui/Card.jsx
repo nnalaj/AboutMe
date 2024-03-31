@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 
+
 const BusinessCard = () => {
   const mountRef = useRef(null);
+  var i;
 
   useEffect(() => {
     // Scene setup
@@ -13,23 +15,38 @@ const BusinessCard = () => {
     mountRef.current.appendChild(renderer.domElement);
 
     // Add cube
-    const geometry = new THREE.PlaneGeometry(5,3);
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const geometry = new THREE.PlaneGeometry(4,2);
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ee00 });
     const loader = new THREE.TextureLoader();
-    // const cube = new THREE.Mesh(geometry, material);
-    // scene.add(cube);
+    const cube = new THREE.Mesh(geometry, material);
+     scene.add(cube);
 
-    const frontTexture = loader.load("/public/imgs/THE WORLD IS YOURS.png") //TODO: find/create cool card texture
-    const backTexture = loader.load("/public/imgs/THE WORLD IS YOURS.png") //TODO: ^^^^^^^
+    const frontTexture = loader.load() //TODO: find/create cool card texture
+    const backTexture = loader.load() //TODO: ^^^^^^^
 
-    camera.position.z = 5;
+    camera.position.z = 4.5;
 
     // Animation loop
     const animate = function () {
       requestAnimationFrame(animate);
 
-      frontTexture.rotation.x += 0.01;
-      backTexture.rotation.y += 0.01;
+      cube.rotation.x += 0.00;
+      
+      do{
+          if(i < .01){  
+                cube.rotation.y += 0.001;
+                console.log("first if")
+                //i + .001;
+          }
+          else if(i > .9)
+                cube.rotation.y -= 0.001;
+                console.log("elseif")
+                //i - .001;
+        }
+        while(i < .9 && i >= 0)
+         
+      
+     
 
       renderer.render(scene, camera);
     };
@@ -51,8 +68,8 @@ const BusinessCard = () => {
 
   return (
     <div ref={mountRef} style={{ position: 'relative', width: '100%', height: '100vh' }}>
-      <div style={{ position: 'absolute', top: '20%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white', zIndex: 1 }}>
-        <h1>Your Content Here</h1>
+      <div style={{ position: 'fixed', top: '10%', left: '50%', color: 'black', zIndex: 1 }}>
+        <h3>Your Content Here</h3>
       </div>
     </div>
   );

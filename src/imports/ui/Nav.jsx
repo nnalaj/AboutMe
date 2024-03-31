@@ -16,9 +16,7 @@ const Nav = () => {
    
     return (
         <>
-           <div className="businessCard">
-            <BusinessCard/>
-           </div>
+           
 
             <div className = "homeGrid">
                 <section >
@@ -37,17 +35,17 @@ const Nav = () => {
                     </div>
                 </section>
                 <section>
-                    <div className = "cell">
+                    {/* <div className = "cell">
  
-                    </div>
+                    </div> */}
                 </section>
                 <section>
                     <Resume />
                 </section>
                 <section>
-                    <div className = "cell">
+                    {/* <div className = "cell">
 
-                    </div>
+                    </div> */}
                 </section>
                 <section>
                     <div className = "cell">
@@ -60,12 +58,16 @@ const Nav = () => {
                     </div>
                 </section> 
                 <section>
+                    
                     <div className = "cell">
                         
                     </div>
                 </section> 
+                
             </div>
-
+                <div className="businessCard">
+                     <BusinessCard/>
+                </div>
        </>
     );
 }
