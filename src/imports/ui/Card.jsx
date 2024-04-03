@@ -4,49 +4,47 @@ import * as THREE from 'three';
 
 const BusinessCard = () => {
   const mountRef = useRef(null);
-  var i;
+  
 
   useEffect(() => {
     // Scene setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ alpha: true }); // alpha: true for transparent background
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    mountRef.current.appendChild(renderer.domElement);
+    renderer.setSize(window.innerWidth, window.innerHeight); //set the renderer to the limits of whatever element it's bound to
+    mountRef.current.appendChild(renderer.domElement); //mount reference a domElement to render the threejs
 
     // Add cube
-    const geometry = new THREE.PlaneGeometry(4,2);
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ee00 });
-    const loader = new THREE.TextureLoader();
-    const cube = new THREE.Mesh(geometry, material);
+    const geometry = new THREE.PlaneGeometry(4,2); //the skeleton 
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ee00, opacity: 110, }); //what covers the skeleton
+    const loader = new THREE.TextureLoader(); //there are different kinds of loaders (for when i want to do 3d stuff)
+    const cube = new THREE.Mesh(geometry, material); //combine the geo and the material to make a textured object
      scene.add(cube);
 
     const frontTexture = loader.load() //TODO: find/create cool card texture
     const backTexture = loader.load() //TODO: ^^^^^^^
 
-    camera.position.z = 4.5;
-
-    // Animation loop
+    camera.position.z = 4.5; //kinda slef explanitory, needs experiementation 
+    
+    let xSpeed = .001; //rotation animation vars
+    let ySpeed = .001; //^^^^^^^^^^^^^^^^^^^^^^^
+    
+    // Animation loop (try to keep this free of other loops: will crash browser easily)
     const animate = function () {
       requestAnimationFrame(animate);
 
-      cube.rotation.x += 0.00;
+      cube.rotation.x += xSpeed;
+      cube.rotation.y += ySpeed;
+
+      //roatational boundaries: 3js uses radians (convert to degrees w pi/? radians ) 
+      //currently set to ~45 degrees both +/-
+      if (cube.rotation.x > Math.PI /4 || cube.rotation.y < -Math.PI /4 ){
+        xSpeed = -xSpeed
+      }
       
-      do{
-          if(i < .01){  
-                cube.rotation.y += 0.001;
-                console.log("first if")
-                //i + .001;
-          }
-          else if(i > .9)
-                cube.rotation.y -= 0.001;
-                console.log("elseif")
-                //i - .001;
-        }
-        while(i < .9 && i >= 0)
-         
-      
-     
+      if (cube.rotation.y > Math.PI /6 || cube.rotation.y < -Math.PI /4 ){
+        ySpeed = -ySpeed
+      }
 
       renderer.render(scene, camera);
     };
