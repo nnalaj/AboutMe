@@ -16,9 +16,11 @@ const Nav = () => {
    
     return (
         <>
-           
-
-            <div className = "homeGrid">
+           <div className="businessCard">
+                     <BusinessCard/>    
+            </div>
+            
+            <div className = "navGrid">
                 <section >
                     <div className = "cell" >
 
@@ -40,7 +42,8 @@ const Nav = () => {
                     </div> */}
                 </section>
                 <section>
-                    <Resume />
+                  <Resume />
+                    
                 </section>
                 <section>
                     {/* <div className = "cell">
@@ -65,9 +68,7 @@ const Nav = () => {
                 </section> 
                 
             </div>
-                <div className="businessCard">
-                     <BusinessCard/>
-                </div>
+                
        </>
     );
 }

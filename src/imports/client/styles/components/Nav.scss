@@ -1,3 +1,26 @@
+.centerCell{
+    border:10px;
+    border-style: groove;
+}
+
+.navGrid {
+    width: 80%;
+    height: 50%;
+    display: grid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, 3fr);
+    gap: 100px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 .businessCard{
 
 }

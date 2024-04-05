@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-// setup a way to make videos suffle in the background
+// setup a way to make videos suffle in the background (DONE)
 // TODO: locate that video you made for video 2 and put it in the background (it was cool)
 // TODO: locate that 3d scene you made for video 2 and put it in the background too (it was also cool)
 // TODO: add the video installations from video 2 (those were cool)
@@ -12,7 +12,7 @@ const Video = () => {
     "./videos/00530.mp4",
     "./videos/20210109 big tree fire.mp4",
     "./videos/bs polejam.mp4",
-    "./videos/half-cab heel.mp4"
+    "./videos/half-cab heel.mp4",
   ];
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(randomInt(playlist.length));

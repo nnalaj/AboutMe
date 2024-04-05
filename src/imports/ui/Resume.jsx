@@ -20,13 +20,14 @@ const resumeData = {
      }
 
     return(
-        <div className='ResumeBlock'>
-            <div className='ResumeContent'>
-                <h2 className="ResumeHeader">Jalann Little</h2>
-                <a href = "mailto:jalannlittle923@gmail.com" className="ResumeHeaderEmail">{resumeData.email}</a>
-                <p className="ResumeSummary"> I NEED A JOB </p>
+        <div className='resumeBlock'>
+            <div className='resumeContent'>
+                <h2 className="resumeHeader">Jalann Little</h2>
+                <a href = "mailto:jalannlittle923@gmail.com" className="resumeHeaderEmail">{resumeData.email}</a>
+                <p className="resumeSummary"> I NEED A JOB </p>
                     <div>
-                        <h2>Skills:</h2>
+                        {/* <h2>Skills:</h2> */}
+                        <hr/>
                         <table className = "skillsTable">
                             <tr>
                                 <th>Web Developer</th>
@@ -35,7 +36,7 @@ const resumeData = {
                             </tr>
                         </table>
                     </div>
-                    <div className="ResumeFooter">
+                    <div className="resumeFooter">
                         <a href = {resumeData.github}>github </a>|<a href = {resumeData.email}>email me</a>
                     </div>
             </div>

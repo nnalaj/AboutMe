@@ -22,8 +22,13 @@ App {
     font-size: 1.5rem;
   }
 
+  body{
+    background-color: black;
+  }
+
 @import "./components/Resume.scss";
 @import "./components/Video.scss";
 @import "./components//NNALAJ.scss";
 @import "./components/Home.scss";
-@import "./components/MeQues.scss"
+@import "./components/MeQues.scss";
+@import "./components/Nav.scss";

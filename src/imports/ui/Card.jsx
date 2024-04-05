@@ -11,19 +11,31 @@ const BusinessCard = () => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ alpha: true }); // alpha: true for transparent background
+    const loader = new THREE.TextureLoader(); //there are different kinds of loaders (for when i want to do 3d stuff)
     renderer.setSize(window.innerWidth, window.innerHeight); //set the renderer to the limits of whatever element it's bound to
     mountRef.current.appendChild(renderer.domElement); //mount reference a domElement to render the threejs
 
-    // Add cube
-    const geometry = new THREE.PlaneGeometry(4,2); //the skeleton 
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ee00, opacity: 110, }); //what covers the skeleton
-    const loader = new THREE.TextureLoader(); //there are different kinds of loaders (for when i want to do 3d stuff)
-    const cube = new THREE.Mesh(geometry, material); //combine the geo and the material to make a textured object
-     scene.add(cube);
+    //declare jpg texture 
+    const frontTexture = loader.load("./imgs/planeCard.png") //TODO: find/create cool card texture
+    // const backTexture = loader.load('imgs/planeCard.jpg') //TODO: ^^^^^^^
+   
+    // Add card with jpg texutre applied
+    const geometry = new THREE.PlaneGeometry(10,5); //the skeleton 
+    const material = new THREE.MeshBasicMaterial({map: frontTexture}, () =>{
+      frontTexture.wrapT = frontTexture.wrapS = THREE.RepeatWrapping;
+      frontTexture.repeat.set(1,1);
+    }); //what covers the skeleton, after img is loaded wrap it
+    
+    const card = new THREE.Mesh(geometry, material); //combine the geo and the material to make a textured object
+    
+    //add card to the scene to be rendered
+    scene.add(card);
 
-    const frontTexture = loader.load() //TODO: find/create cool card texture
-    const backTexture = loader.load() //TODO: ^^^^^^^
+    // frontTexture.wrapT = THREE.RepeatWrapping;
+    // frontTexture.wraps = THREE.RepeatWrapping;
+    // frontTexture.repeat.set(1,1);
 
+    //camera mods
     camera.position.z = 4.5; //kinda slef explanitory, needs experiementation 
     
     let xSpeed = .001; //rotation animation vars
@@ -33,16 +45,16 @@ const BusinessCard = () => {
     const animate = function () {
       requestAnimationFrame(animate);
 
-      cube.rotation.x += xSpeed;
-      cube.rotation.y += ySpeed;
+      card.rotation.x += xSpeed;
+      card.rotation.y += ySpeed;
 
       //roatational boundaries: 3js uses radians (convert to degrees w pi/? radians ) 
       //currently set to ~45 degrees both +/-
-      if (cube.rotation.x > Math.PI /4 || cube.rotation.y < -Math.PI /4 ){
+      if (card.rotation.x > Math.PI /4 || card.rotation.y < -Math.PI /4 ){
         xSpeed = -xSpeed
       }
       
-      if (cube.rotation.y > Math.PI /6 || cube.rotation.y < -Math.PI /4 ){
+      if (card.rotation.y > Math.PI /6 || card.rotation.y < -Math.PI /4 ){
         ySpeed = -ySpeed
       }
 
