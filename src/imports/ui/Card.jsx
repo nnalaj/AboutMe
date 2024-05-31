@@ -16,8 +16,8 @@ const BusinessCard = () => {
     mountRef.current.appendChild(renderer.domElement); //mount reference a domElement to render the threejs
 
     //declare jpg texture 
-    const frontTexture = loader.load("./imgs/planeCard.png") //TODO: find/create cool card texture
-    // const backTexture = loader.load('imgs/planeCard.jpg') //TODO: ^^^^^^^
+    const frontTexture = loader.load("./imgs/planeCard.png")
+    // const backTexture = loader.load('imgs/planeCard.jpg')
    
     // Add card with jpg texutre applied
     const geometry = new THREE.PlaneGeometry(10,5); //the skeleton 

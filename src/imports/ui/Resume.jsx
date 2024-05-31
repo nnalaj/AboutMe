@@ -20,19 +20,21 @@ const resumeData = {
      }
 
     return(
-        <div className='resumeBlock'>
+    <div>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard&display=swap" rel="stylesheet"/>
+       <div className='resumeBlock'>
             <div className='resumeContent'>
-                <h2 className="resumeHeader">Jalann Little</h2>
+                <h2 className="jacquard-12-regular">Jalann Little</h2>
                 <a href = "mailto:jalannlittle923@gmail.com" className="resumeHeaderEmail">{resumeData.email}</a>
-                <p className="resumeSummary"> I NEED A JOB </p>
+                <p className="resumeSummary"> Looking for work </p>
                     <div>
                         {/* <h2>Skills:</h2> */}
                         <hr/>
                         <table className = "skillsTable">
                             <tr>
-                                <th>Web Developer</th>
-                                <th>Database</th>
-                                <th>Object Oriented</th>
+                                <th>Software Developer</th>
+                                <th>Videographer</th>
+                                <th>Mechanic</th>
                             </tr>
                         </table>
                     </div>
@@ -41,6 +43,7 @@ const resumeData = {
                     </div>
             </div>
         </div>
+    </div>
     )
 }
 
