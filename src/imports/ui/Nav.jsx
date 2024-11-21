@@ -3,7 +3,7 @@ import NNALAJ from "./NNALAJ.jsx";
 import Resume from "./Resume.jsx";
 import {Link, Outlet} from "react-router-dom";
 import Installs from "./Installs.jsx"
-import  BusinessCard  from "./Card.jsx"
+
 
 const Nav = () => {
 
@@ -16,57 +16,44 @@ const Nav = () => {
    
     return (
         <>
-           <div className="businessCard">
-                     <BusinessCard/>    
-            </div>
             
             <div className = "navGrid">
-                <section >
                     <div className = "cell" >
 
                     </div>
-                </section>
-                <section>
+
                     <div className = "cell">
                         
                     </div>
-                </section>
-                <section>
+
                     <div className = "cell">
                        
                     </div>
-                </section>
-                <section>
-                    {/* <div className = "cell">
- 
-                    </div> */}
-                </section>
-                <section>
-                  <Resume />
-                    
-                </section>
-                <section>
-                    {/* <div className = "cell">
-
-                    </div> */}
-                </section>
-                <section>
+                 
+                    <div className="centerCell">
+                        <Resume />
+                    </div>
+                                  
                     <div className = "cell">
 
                     </div>
-                </section>
-                 <section>
+                 
                     <div className = "cell">
                         
                     </div>
-                </section> 
-                <section>
-                    
+                  
                     <div className = "cell">
                         
                     </div>
-                </section> 
-                
+
+                    <div className = "cell">
+                        
+                    </div>
+
+                    <div className = "cell">
+                        
+                    </div>
+
             </div>
                 
        </>

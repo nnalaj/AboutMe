@@ -11,10 +11,10 @@ const Installs = () => {
         <div> 
             <div className = "installsContent">
                 <div className = "miataRoom">
-                    <img src="./imgs/install1.jpg"/>
+                    <img className='roomImg' src="./imgs/install1.jpg"/>
                 </div>
                 <div className = "secretCave">
-
+                    <img className='roomImg' src="./imgs/install2.jpg"/>
                 </div>
                 <div className = "???">
 

@@ -1,9 +1,19 @@
+.video-background {
+  position: sticky; /* Keeps it in the same place even when scrolling */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Ensures no overflow */
+  z-index: -1; /* Places it behind other content */
+}
+
 video{
-    display: block;
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: visible;
-    background-color: #000000;
-    z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the video */
+  min-width: 100vw; /* Ensures the video always fills the width */
+  min-height: 100vh; /* Ensures the video always fills the height */
+  object-fit: cover; /* Crops the video to cover the entire area */
   }

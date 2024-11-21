@@ -78,7 +78,7 @@ const BusinessCard = () => {
 
   return (
     <div ref={mountRef} style={{ position: 'relative', width: '100%', height: '100vh' }}>
-      <div style={{ position: 'fixed', top: '10%', left: '50%', color: 'black', zIndex: 1 }}>
+      <div style={{ position: 'fixed', top: '0%', left: '50%', color: 'black', zIndex: 1 }}>
         
       </div>
     </div>

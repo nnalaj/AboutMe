@@ -1,6 +1,9 @@
 * { //global reset
   margin: 0;
   padding: 0;
+  width: auto;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 App {
@@ -10,7 +13,7 @@ App {
     align-items: center;
     justify-content: center;
     background-color: rgb(5, 8, 8);
-    overflow: visible;
+    overflow: hidden;
   }
   
   h1 {

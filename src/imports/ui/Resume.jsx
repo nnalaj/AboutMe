@@ -16,7 +16,7 @@ const resumeData = {
         work: " ",
         github: "https://github.com/nnalaj",
         ig: "https://instagram.com/nnnalaj", 
-        email: "jalannlittle923@gmail.com ", 
+        email: "mailto:jalannlittle923@gmail.com ", 
      }
 
     return(
@@ -25,16 +25,16 @@ const resumeData = {
        <div className='resumeBlock'>
             <div className='resumeContent'>
                 <h2 className="jacquard-12-regular">Jalann Little</h2>
-                <a href = "mailto:jalannlittle923@gmail.com" className="resumeHeaderEmail">{resumeData.email}</a>
-                <p className="resumeSummary"> Looking for work </p>
+                {/* <a href = "mailto:jalannlittle923@gmail.com" className="resumeHeaderEmail">{resumeData.email}</a> */}
+                    <hr/>
                     <div>
                         {/* <h2>Skills:</h2> */}
-                        <hr/>
+                        
                         <table className = "skillsTable">
                             <tr>
-                                <th>Software Developer</th>
-                                <th>Videographer</th>
-                                <th>Mechanic</th>
+                                <th>Developer</th> |
+                                <th>Videographer</th> |
+                                <th>Mechanic</th> 
                             </tr>
                         </table>
                     </div>

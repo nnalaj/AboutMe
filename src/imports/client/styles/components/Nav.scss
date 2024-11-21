@@ -1,27 +1,52 @@
-.centerCell{
-    border:10px;
-    border-style: groove;
+.resumeBlock {
+    display: inline-flex;
+    width: fit-content;
+    height: 30%;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    opacity: 90%;
+    font-size: 16pt;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jacquard', serif; /* Add your font-family usage here */
+    text-decoration: none;
 }
+
+.centerCell {
+    border: 1px groove;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(223, 122, 0);
+    width: fit-content;
+    height: fit-content;
+    grid-column: 2; /* Aligns it to the second column */
+    grid-row: 2;
+    font-family: 'Jacquard', serif; /* Keeps your font style */
+  }
+
+  .cell {
+        width: 30px;
+  }
 
 .navGrid {
-    width: 80%;
-    height: 50%;
-    display: grid;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    grid-template-columns: repeat(3, 3fr);
-    grid-template-rows: repeat(3, 3fr);
-    gap: 100px;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 2;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-.businessCard{
-
+  width: 85%;
+  height: 85%;
+  display: grid;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 100px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  z-index: 2;
 }
 
