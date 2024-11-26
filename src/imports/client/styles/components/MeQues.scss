@@ -1,20 +1,33 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-width: 600px) {
-    .homeGrid {
-        grid-template-columns: 1fr; /* Stack elements vertically */
-      }
-    
-      .cell, section {
-        padding: 10px; /* Adjust padding for smaller screens */
-      }
-    
-      /* Adjust font size for smaller devices if necessary */
-      .cell a, .cell Link {
-        font-size: 14px; /* Adjust font size for smaller screens */
-      }
+@media screen and (max-width: 767px) { /*for mobile*/
+  body {
+    font-size: 14px; /* Reduce base font size */
   }
+
+  .navGrid {
+    width: 100%; /* Use full screen width */
+    grid-template-columns: 1fr; /* Single-column layout */
+    grid-template-rows: auto auto auto auto; /* More rows for stacked layout */
+    gap: 20px; /* Increase spacing between items */
+  }
+
+  .centerCell {
+    font-size: 1rem; /* Scale down text */
+    padding: 10px; /* Reduce padding */
+    text-align: center; /* Center-align text */
+  }
+
+  .resumeBlock {
+    width: 90%; /* Shrink to fit smaller screens */
+    margin: 10px auto; /* Center content vertically */
+  }
+
+  .video-background video {
+    object-fit: contain; /* Avoid cropping on smaller screens */
+  }
+}
+
   
-  /* Tablets, iPads (portrait and landscape) ----------- */
+  /* Tablets */
   @media only screen and (min-width: 601px) and (max-width: 900px) {
     .homeGrid {
         grid-template-columns: 1fr; /* Stack elements vertically */
@@ -32,11 +45,6 @@
   
   /* Small screens, laptops ----------- */
   @media only screen and (min-width: 901px) and (max-width: 1200px) {
-    
-  }
-  
-  /* Large screens, desktops ----------- */
-  @media only screen and (min-width: 1201px) {
     
   }
   
